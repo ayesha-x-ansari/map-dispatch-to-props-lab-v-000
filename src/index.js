@@ -5,13 +5,13 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import manageRestaurants from './reducers/manageRestaurants';
 
-//const store = createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
-export const configureStore = () => {
-  return createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
-}
+//export const configureStore = () => {
+//  return createStore(manageRestaurants, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+//}
 
-const store = configureStore();
+//const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
