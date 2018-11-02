@@ -5,9 +5,12 @@ import { bindActionCreators } from 'redux';
 
 export class RestaurantInput extends Component {
 
-  this.state = {
-    name: '',
-    location: ''
+  constructor(props){
+    super(props);
+
+    this.state = {
+      name: '', location: ''
+    };
   }
 
   handleOnNameChange = event => {
