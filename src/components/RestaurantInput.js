@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux';
 
 export class RestaurantInput extends Component {
 
-  state = {
+  this.state = {
     name: '',
     location: ''
   }
